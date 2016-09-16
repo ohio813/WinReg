@@ -9,11 +9,21 @@ I developed some **C++ wrappers** around this low-level Win32 API, to raise the 
 
 For example, the `REG_MULTI_SZ` registry type associated to double-NUL-terminated C-style strings is handled using a much easier higher-level `vector<wstring>`. My C++ code does the _translation_ between high-level C++ STL-based stuff and low-level Win32 C-interface APIs.
 
+The Win32 registry value types are mapped to C++ higher-level types according the following table:
+
+| Win32 Registry Type  | C++ Type  |
+| -------------------- |:---------:| 
+| `REG_DWORD`          | `DWORD`                      |
+| `REG_SZ`             | `std::wstring`               |
+| `REG_EXPAND_SZ`      | `std::wstring`               |
+| `REG_MULTI_SZ`       | `std::vector<std::wstring>`  |
+| `REG_BINARY`         | `std::vector<BYTE>`          |
+
 **NOTE**: I did a _few_ tests, according to which the code seems to work, but _more_ tests are required. So please consider current library status kind of a _beta_ version! Moreover, code and comments may require some further adjustments. Currently, the code compiles cleanly at `/W4` in both 32-bit and 64-bit builds.
 
-Being very busy right now, I preferred releasing this library on GitHub in current status; feedback, bug-fixes, etc. are welcome.
+Being very busy right now, I preferred releasing this library on GitHub in current status; constructive feedback, bug reports, etc. are welcome.
 
-I developed this code using **Visual Studio 2005 with Update 3**.
+I developed this code using **Visual Studio 2015 with Update 3**.
 
 The library's code is split between a `WinReg.hpp` header (containing declarations and some inline implementations), and the `WinReg.cpp` source file with implementation code.
 
