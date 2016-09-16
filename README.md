@@ -11,8 +11,8 @@ For example, the `REG_MULTI_SZ` registry type associated to double-NUL-terminate
 
 The Win32 registry value types are mapped to C++ higher-level types according the following table:
 
-| Win32 Registry Type  | C++ Type  |
-| -------------------- |:---------:| 
+| Win32 Registry Type  | C++ Type                     |
+| -------------------- |:----------------------------:| 
 | `REG_DWORD`          | `DWORD`                      |
 | `REG_SZ`             | `std::wstring`               |
 | `REG_EXPAND_SZ`      | `std::wstring`               |
