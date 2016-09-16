@@ -3,7 +3,7 @@
 
 by Giovanni Dicanio
 
-The Windows Registry C-interface API is very low-level and very hard to use.
+The Windows Registry C-interface API is  _very low-level_ and _hard_ to use.
 
 I developed some **C++ wrappers** around this low-level Win32 API, to raise the semantic level, using C++ classes like `std::wstring`, `std::vector`, etc. instead of raw C-style buffers and low-level mechanisms. 
 
@@ -39,5 +39,5 @@ In addition, there are various functions that wrap raw Win32 registry APIs.
 
 The library stuff lives under the `winreg` namespace.
 
-See the **`WinReg.hpp`** header for more details and documentation.
+See the **`WinReg.hpp`** header for more details and **documentation**.
 
