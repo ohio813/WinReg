@@ -9,7 +9,7 @@ I developed some **C++ wrappers** around this low-level Win32 API, to raise the 
 
 For example, the `REG_MULTI_SZ` registry type associated to double-NUL-terminated C-style strings is handled using a much easier higher-level `vector<wstring>`. My C++ code does the _translation_ between high-level C++ STL-based stuff and low-level Win32 C-interface APIs.
 
-**NOTE**: I did a _few_ tests, according to which the code seems to work, but _more_ tests are required. So please consider current library status kind of a _beta_ version! Moreover, code and comments may require some further adjustments.
+**NOTE**: I did a _few_ tests, according to which the code seems to work, but _more_ tests are required. So please consider current library status kind of a _beta_ version! Moreover, code and comments may require some further adjustments. Currently, the code compiles cleanly at `/W4` in both 32-bit and 64-bit builds.
 
 Being very busy right now, I preferred releasing this library on GitHub in current status; feedback, bug-fixes, etc. are welcome.
 
