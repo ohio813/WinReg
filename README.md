@@ -22,10 +22,12 @@ The library's code is split between a `WinReg.hpp` header (containing declaratio
 The library exposes three main classes:
 
 * `RegKey`: a wrapper around raw Win32 `HKEY` handles
-* `RegValue`: a variant-style class representing registry values (currently supported registry types are: `REG_DWORD`, `REG_SZ`, `REG_EXPAND_SZ`, `REG_MULTI_SZ`, `REG_BINARY`; see the `WinReg.hpp` header for more details)
+* `RegValue`: a variant-style class representing registry values (currently supported registry types are: `REG_DWORD`, `REG_SZ`, `REG_EXPAND_SZ`, `REG_MULTI_SZ`, `REG_BINARY`)
 * `RegException`: exception class to signal error conditions
 
 In addition, there are various functions that wrap raw Win32 registry APIs.
 
 The library stuff lives under the `winreg` namespace.
+
+See the **`WinReg.hpp`** header for more details and documentation.
 
